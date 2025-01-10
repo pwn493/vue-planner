@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           # fetch all commits to get last updated time or other git log info
           fetch-depth: 0
@@ -43,12 +43,12 @@ jobs:
 
       # run build script
       - name: Build VuePress site
-        run: npm docs:build
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: docs/.vuepress/dist
+          path: .vuepress/dist
 
   deploy:
     environment:
