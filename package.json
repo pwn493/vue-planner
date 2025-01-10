@@ -1,0 +1,19 @@
+{
+  "name": "vue-planner",
+  "version": "1.0.0",
+  "description": "a planner app made in vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pwn493/vue-planner.git"
+  },
+  "author": "Danny Hyatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwn493/vue-planner/issues"
+  },
+  "homepage": "https://github.com/pwn493/vue-planner#readme"
+}
