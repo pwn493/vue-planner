@@ -4,7 +4,9 @@
   "description": "a planner app made in vue",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/pwn493/vue-planner/issues"
   },
-  "homepage": "https://github.com/pwn493/vue-planner#readme"
+  "homepage": "https://github.com/pwn493/vue-planner#readme",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.19",
+    "@vuepress/theme-default": "^2.0.0-rc.69",
+    "sass-embedded": "^1.83.1",
+    "vuepress": "^2.0.0-rc.19"
+  }
 }

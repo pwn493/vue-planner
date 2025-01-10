@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 # vitepress files
-.vitepress/dist
-.vitepress/cache
+.vupress/dist
+.vuepress/cache
