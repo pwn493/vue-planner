@@ -1,4 +1,4 @@
-name: docs
+name: deploy to github pages
 
 on:
   # trigger deployment on every push to main branch
@@ -42,13 +42,13 @@ jobs:
         run: npm ci
 
       # run build script
-      - name: Build VuePress site
-        run: npm run docs:build
+      - name: Build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vuepress/dist
+          path: ./dist
 
   deploy:
     environment:
